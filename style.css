@@ -1,0 +1,119 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto ;
+  grid-gap: 5%;
+  padding: 3%;
+  text-align: center;
+}
+h1{
+  text-align: center;
+  color: #FF4380;
+  font-size: 2rem;
+}
+.grid-container > div {
+  font-size: 1rem;
+}
+#beneficios {
+  margin: 2rem;
+}
+.iconos{
+  height: 55%;
+}
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.items-precios {
+  margin: 0.6rem;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  background-color: white;
+  box-shadow: 0rem 0rem 0.7rem #aaaaaa;
+  border-radius: 0.4rem;
+  color: BLACK;
+  text-align: center;
+  width: 29%;
+}
+.btn{
+  background-color: #0D8699;
+  color: white;
+  border: none;
+  padding: 1rem;
+  border-radius: 0.9rem;
+  margin: 0.3rem 0.2rem;
+}
+.btn:hover{
+  background-color: #43C2CB;
+}
+.btn-rose{
+  background-color: rosybrown;
+  font-size: 1.3rem;
+}
+h2{
+  margin: .8rem;
+  font-size: 1.5rem;
+  font-weight: normal;
+  color: #0D8699;
+}
+p{
+  text-align: left;
+  font-size: 1rem;
+  margin: 1rem;
+}
+.menu{
+  justify-content: flex-end;
+}
+.redes{
+  color: white;
+}
+#descarga{
+  position: relative;
+  display: inline-block;
+}
+.texto{
+  position: absolute;
+  top: 2rem;
+  font-size: 2rem;
+  color: white;
+  margin: 2% 4%;
+  text-align: center;
+}
+.cont-descarga{
+  position: absolute;
+  bottom: 2rem;
+  text-align: center;
+  width: 100%;
+}
+.animation{
+  position: relative;
+  animation: animation_1 3s infinite;
+  margin: .6rem;
+}
+#precios{
+  margin: 2rem 0;
+}
+
+@keyframes animation_1{
+  0% {
+    transform: rotate(0deg);
+  }
+  15% {
+    transform: rotate(-20deg);
+  }
+  45% {
+    transform: rotate(20deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .grid-container {grid-template-columns: auto auto;}
+  .flex-container {flex-direction: column;}
+  .items-precios {width: 95%;}
+  .texto {top: .5rem; font-size: 1rem;}
+  .cont-descarga {position: relative; bottom: 0;}
+  .btn-rose {font-size: 1rem; padding: 1%;}
+}
